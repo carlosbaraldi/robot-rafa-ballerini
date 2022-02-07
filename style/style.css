@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    box-sizing     : border-box;
+    margin         : 0;
+    padding        : 0;
+    color          : #FFF2E7;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+
+/* STYLE HEADER */
+.header {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    align-items    : center;
+    padding        : 2.4rem 0px;
+}
+
+
+.header-image {
+    height: 7.2%;
+}
+
+
+.header-menu {
+    display       : flex;
+    flex-direction: row;
+    gap           : 3.2rem;
+}
+
+.header-menu-responsive {
+    display: none;
+
+}
+
+
+.header-menu-item {
+    font-family: Sarala;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 1.8rem;
+    line-height: 2.9rem;
+}
+
+
+/* STYLE SECTION HERO-CONTENT */
+.content {
+    border-top: 0.4px solid #FFF2E7;
+}
+
+
+.hero-content {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-around;
+}
+
+
+.hero-content-text {
+    display       : flex;
+    flex-direction: column;
+    gap           : 3.2rem;
+}
+
+
+.hero-content-text-title {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size  : 6.4rem;
+}
+
+
+.hero-content-text-description {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size  : 2.4rem;
+    color      : #ECD6C4;
+}
+
+
+.btn {
+    background   : #ECD6C4;
+    box-shadow   : 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2.0rem;
+    width        : 18.5rem;
+    height       : 5.7rem;
+    font-family  : Sarala;
+    font-size    : 2.4rem;
+    color        : #2F2325;
+}
+
+.btn:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+
+.hero-content-image {
+    height: 43%;
+}
+
+
+/* STYLE SECTION DESCRIPTION-ROBOT */
+.description-robot {
+    display        : flex;
+    flex-direction : column;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+    gap            : 4.0rem;
+    padding        : 3.7rem 0px;
+}
+
+
+.description-robot-title {
+    font-family: Righteous;
+    font-size  : 2.4rem;
+    line-height: 3.0rem;
+}
+
+
+.description-robot-paragraph {
+    font-family: Sarala;
+    font-size  : 1.8rem;
+    line-height: 2.9rem;
+}
+
+
+/* STYLE FOOTER */
+.footer {
+    margin-top     : 10rem;
+    padding        : 3.7rem;
+    border-top     : 0.4px solid #FFF2E7;
+    display        : flex;
+    justify-content: center;
+}
+
+
+.footer-image {
+    height: 48%;
+}
+
+
+
+/* MENU RESPONSIVE RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+
+    /* STYLE HEADER */
+    .header {
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-around;
+        align-items    : center;
+        padding        : 2.4rem 0px;
+    }
+
+
+    .header-menu {
+        display: none
+    }
+
+    .header-menu-responsive {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-evenly;
+        gap            : 25px;
+        padding        : 30px 0 10px 0;
+        text-align     : center;
+        margin         : auto 30px;
+
+    }
+
+    .header-menu-item-responsive {
+        font-family: Sarala;
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 1.4rem;
+        line-height: 2.5rem;
+    }
+
+
+    /*  STYLE SECTION HERO-CONTENT RESPONSIVE */
+    .hero-content {
+        display       : flex;
+        flex-direction: column;
+    }
+
+
+    .hero-content-text {
+        justify-content: center;
+        align-items    : center;
+    }
+
+
+    .hero-content-text-description {
+        text-align: center;
+    }
+
+
+    /* STYLE DESCRIPTION-ROBOT RESPONSIVE */
+    .description-robot {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        text-align     : center;
+    }
+
+
+}
